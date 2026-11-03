@@ -97,7 +97,6 @@
 
   .cake:focus { outline: none; }
 
-  /* focus ring only for keyboard users, never after a tap */
   .cake.using-keyboard:focus {
     outline: 3px solid var(--cream);
     outline-offset: 8px;
@@ -347,7 +346,7 @@
     title.classList.add('writing');
   }
 
-  // Little sparks drifting up from the flame
+  // Little sparks
   function spawnSpark() {
     var dot = document.createElementNS(SVG_NS, 'circle');
     dot.setAttribute('cx', (200 + rand(-5, 5)).toFixed(1));
@@ -371,7 +370,7 @@
     if (lit && !document.hidden && !reduceMotion.matches) spawnSpark();
   }, 420);
 
-  // Smoke curls up after blowing the candle out
+  // Smoke curls up 
   function puff() {
     smoke.forEach(function (path, i) {
       path.animate([
@@ -384,7 +383,7 @@
     wickEmber.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 1800, easing: 'ease-out' });
   }
 
-  // White hearts float up from wherever you tapped
+  // White hearts 
   var HEART_SVG =
     '<svg viewBox="0 0 32 29" aria-hidden="true">' +
     '<path fill="#ffffff" d="M16 28 C16 28 2 18 2 9 C2 4.5 5.5 1 10 1 C12.5 1 14.8 2.3 16 4.5 ' +
