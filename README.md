@@ -4,7 +4,7 @@ A Birthday Cake animation made with HTML / CSS / JS
 
 # HOW TO USE
 
-Open .html file in any browser or code editor then click on the ( CLICK ME ) button
+Open .html file in any browser or code editor then click on cake to burn candel 😋
 
 # CUSTOMISING 
 
